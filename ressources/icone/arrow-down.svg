@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow Down</title>
+    <g id="Arrow-Down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,15.5 C11.744,15.5 11.488,15.402 11.293,15.207 L7.293,11.207 C6.902,10.816 6.902,10.184 7.293,9.793 C7.684,9.402 8.316,9.402 8.707,9.793 L12,13.086 L15.293,9.793 C15.684,9.402 16.316,9.402 16.707,9.793 C17.098,10.184 17.098,10.816 16.707,11.207 L12.707,15.207 C12.512,15.402 12.256,15.5 12,15.5 Z" fill="#063EEA" fill-rule="nonzero"></path>
+    </g>
+</svg>

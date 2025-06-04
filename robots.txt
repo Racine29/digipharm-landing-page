@@ -1,0 +1,9 @@
+# Fichier robots.txt pour DigiPharm
+# Dernière mise à jour: 2025-06-04
+
+# Autoriser tous les robots à explorer l'ensemble du site
+User-agent: *
+Allow: /
+
+# Indiquer l'emplacement du sitemap
+Sitemap: https://www.digipharm.ml/sitemap.xml

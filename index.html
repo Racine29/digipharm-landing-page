@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO - Balises principales -->
+    <title>DigiPharm - application de gestion de pharmacie</title>
+    <meta name="description" content="
+    DigiPharm simplifie la gestion de votre pharmacie en te peemettant de reduire jusqu'à 90% tes pertes en terme de produits périmés.Reduit tes couts en terme d'employer tous en maximisant tes profits. Économisez de l'argent et du temps avec notre solution simple et intuitive.">
+    <meta name="keywords" content="DigiPharm, gestion pharmacie, médicaments périmés,saas pharmacie, logiciel pharmacie, stock pharmacie, gestion péremption, application pharmacie">
+    <meta name="author" content="DigiPharm">
+    <link rel="canonical" href="https://www.digipharm.ml/">
+    
+    <!-- SEO - Favicons optimisés pour tous appareils -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ressources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ressources/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/svg+xml" href="ressources/favicon/favicon.svg">
+    <link rel="manifest" href="ressources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="ressources/favicon/favicon.svg" color="#063eea">
+    <link rel="shortcut icon" href="ressources/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="DigiPharm">
+    <meta name="application-name" content="DigiPharm">
+    <meta name="apple-mobile-web-app-title" content="Digipharm" />
+    <link rel="manifest" href="ressources/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#063eea">
+     <meta name="theme-color" content="#ffffff">
+    
+    <!-- SEO - Open Graph (pour les réseaux sociaux) -->
+    <meta property="og:title" content="DigiPharm - Application qui simplifie la gestion de pharmacie sans stress ni oubli.">
+    <meta property="og:description" content="
+    DigiPharm simplifie la gestion de votre pharmacie en te peemettant de reduire jusqu'à 90% tes pertes en terme de produits périmés.Reduit tes couts en terme d'employer tous en maximisant tes profits. Économisez de l'argent et du temps avec notre solution simple et intuitive.">
+    <meta property="og:image" content="./ressources/images/digipharm-logo.png">
+    <meta property="og:url" content="https://www.digipharm.ml/">
+    <meta property="og:type" content="website">
+    
+    <!-- SEO - Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DigiPharm - Fini les médicaments périmés">
+    <meta name="twitter:description" content="DigiPharm simplifie la gestion de votre pharmacie en évitant les médicaments périmés.Reduit tes couts en terme d'employer tous en maximisant tes profits. Économisez et gagnez du temps!">
+    <meta name="twitter:image" content="./ressources/images/digipharm-logo.png">
+    
+    <!-- Poppins Font avec preload pour performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Grid Only (Responsive Only) avec preload pour performance -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css" as="style">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="ressources/style.css">
+    
+    <!-- SEO - Structure de données Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "DigiPharm",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "XOF"
+      },
+      "description": "DigiPharm simplifie la gestion de votre pharmacie en te peemettant de reduire jusqu'à 90% tes pertes en terme de produits périmés.Reduit tes couts en terme d'employer tous en maximisant tes profits. Économisez de l'argent et du temps avec notre solution simple et intuitive."
+    }
+    </script>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <header>
+        <nav class="navigation">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Structure pour mobile : menu à gauche, logo au centre -->
+                    <div class="col-2 d-md-none">
+                        <!-- Bouton menu mobile -->
+                        <div class="menuMobile">
+                            <button class="boutonMenuMobile" id="boutonMenuMobile">
+                                <img src="ressources/icone/menu-icone.svg" alt="Menu Mobile">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Premier bloc: Logo - centré sur mobile, à gauche sur desktop -->
+                    <div class="col-8 col-md-3 text-center text-md-start">
+                        <div class="blocLogo">
+                            <a href="index.html" class="logo" aria-label="DigiPharm - Page d'accueil">
+                                <img src="ressources/images/digipharm-logo.svg" alt="DigiPharm - Solution de gestion des médicaments périmés pour pharmacies" width="150" height="40">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 d-md-none"><!-- Espace vide pour équilibrer le menu mobile --></div>
+                    
+                    <!-- Deuxième bloc: Menu principal -->
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="blocMenu">
+                            <ul class="menuPrincipal">
+                                <li class="elementMenu"><a href="#accueil" class="lienMenu actif">Accueil</a></li>
+                                <li class="elementMenu"><a href="#fonctionnalites" class="lienMenu">Fonctionnalités</a></li>
+                                <li class="elementMenu"><a href="#faq" class="lienMenu">FAQ</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Troisième bloc: Connexion -->
+                    <div class="col-md-3 col-6 btnConnexion-nav">
+                        <div class="blocConnexion">
+                            <a href="#" class="boutonConnexion">Se connecter</a>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Menu mobile (caché par défaut) -->
+        <div class="menuMobileConteneur" id="menuMobileConteneur">
+            <img src="ressources/images/digipharm-logo.svg" alt="DigiPharm Logo - Solution de gestion des médicaments périmés" width="120" height="35" class="menuMobileLogo">
+            <button class="fermerMenuMobile" id="fermerMenuMobile" aria-label="Fermer le menu mobile">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <ul class="menuMobileListe">
+                <li class="elementMenuMobile"><a href="#accueil" class="lienMenuMobile actif">Accueil</a></li>
+                <li class="elementMenuMobile"><a href="#fonctionnalites" class="lienMenuMobile">Fonctionnalités</a></li>
+                <li class="elementMenuMobile"><a href="#faq" class="lienMenuMobile">FAQ</a></li>
+                <li class="elementMenuMobile"><a href="#reserverDemo" class="boutonConnexionMobile">Réserver une démo</a></li>
+            </ul>
+        </div>
+        
+        <!-- Overlay pour le menu mobile -->
+        <div class="menuMobileOverlay" id="menuMobileOverlay"></div>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section id="accueil" class="sectionHero" aria-label="Accueil DigiPharm">
+            <div class="heroBackground"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="contenuHero">
+                            <h1 class="titreHero animation-fade-up"><span itemprop="headline">Fini les médicaments<span class="titreHeroSpan"> périmés.</span></span></h1>
+                            <p class="sousTitreHero animation-fade-up">
+                                Chaque médicament périmé, c'est de l'argent qui part à la poubelle.Digipharm simplifie la gestion de ta pharmacie,sans stress ni oubli.
+                .</p>
+                            
+                            <div class="boutonsHero animation-fade-up">
+                                <a href="#reserverDemo" class="boutonPrimaire">Je réserve ma démo</a>
+                                <a href="#videoPresentation" class="boutonSecondaire">Vidéo de présentation <img src="ressources/icone/video-icone.svg" alt="Icône vidéo" width="16" height="16"/> </a>
+                            </div>
+                            
+                            <div class="imageHero animation-scale">
+                                <img src="ressources/images/digipharm-app-apercu.svg" alt="Interface de l'application DigiPharm montrant la gestion des médicaments périmés" class="appApercu" width="500" height="400" loading="eager" fetchpriority="high">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vidéo -->
+        <section class="sectionVideo" id="videoPresentation" aria-label="Présentation vidéo de DigiPharm">
+            <div class="container">
+                <div class="row align-items-start">
+                    <!-- Premier bloc: Texte -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="blocTexteVideo animation-fade-left">
+                            <h2 class="titreSection">
+                                La gestion de votre pharmacie, comme vous en avez toujours rêvé.</h2>
+                            <p class="sousTitreSection">
+                                Digipharm remplace la complexité par la clarté. En quelques clics, vous gérez les produits, les ventes, l'AMO, les approvisionnements – sans stress ni pertes.
+                                Reduit tes couts en terme d'employer tous en maximisant tes profits.</p>
+                           <div class="boutonsHero video-btn">
+                            <a href="#reserverDemo" class="boutonPrimaire">Je réserve ma démo</a>
+                           </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Deuxième bloc: Vidéo -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="blocVideo animation-fade-right">
+                            <video class="videoPresentation" controls poster="ressources/images/digipharm-app-apercu.svg">
+                                <source src="ressources/videos/vente_assurance.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Problèmes -->
+        <section class="sectionProblemes" aria-label="Problèmes résolus par DigiPharm">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Premier bloc: Texte -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="blocTexteProblemes animation-fade-left">
+                            <h2 class="titreSection">Trop de logiciels. Trop de pertes. Trop de stress.</h2>
+                            <ul class="listeProblemes">
+                                <li class="itemProbleme">Les pertes liées aux médicaments périmés peuvent atteindre <span class="liste-probleme-argent">10 millions FCFA/an</span>.</li>
+                                <li class="itemProbleme">Vos stocks affichent des écarts sans explication.</li>
+                                <li class="itemProbleme">Vous jonglez entre 3 ou 4 logiciels complexes.</li>
+                                <li class="itemProbleme">La vente AMO est penible et vous ralentit… chaque jour.</li>
+                                <li class="itemProbleme">Plus la pharmacie grandit, plus c'est le chaos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Deuxième bloc: Image -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="blocImageConcurrent animation-fade-right">
+                            <img src="ressources/images/concurrent-logo.svg" alt="Logos des concurrents" class="imageConcurrent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Fonctionnalités -->
+        <section id="fonctionnalites" class="sectionFonctionnalites" aria-label="Fonctionnalités principales de DigiPharm" itemscope itemtype="https://schema.org/ItemList">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="titrePrincipal animation-fade-up">Stock fiable et zéro péremption</h2>
+                    </div>
+                </div>
+                
+                <div class="row cartesFonctionnalites">
+                    <!-- Carte 1: Rayon -->
+                    <div class="col-md-3 col-sm-12 mb-4">
+                        <div class="carteFonctionnalite carteFonctionnalite--beige animation-scale">
+                            <div class="numeroCarte">01</div>
+                            <h3 class="titreCarte">Rayon</h3>
+                            <p class="descriptionCarte">Les produits sont automatiquement classés par molécule, pour repérer en un clin d'œil les périmés ou ceux proches de l'être.</p>
+                            
+                            <div class="imageCarteFonctionnalite">
+                                <img class="imageRayon" src="ressources/images/rayon-img.svg" alt="Rayon" class="iconeCarte">
+                            </div>
+                         
+                        </div>
+                    </div>
+                    
+                    <!-- Carte 2: Stock -->
+                    <div class="col-md-3 col-sm-12 mb-4">
+                        <div class="carteFonctionnalite carteFonctionnalite--bleu animation-scale">
+                            <div class="numeroCarte">02</div>
+                            <h3 class="titreCarte">Stock</h3>
+                            <p class="descriptionCarte">Les produits sont classés automatiquement par rayon,molecule et par date de péremption (jour, mois, année), pour agir à temps et éviter les pertes</p>
+                            
+                            <!-- Exemple de produits en stock -->
+                            <div class="imageCarteFonctionnalite">
+                                <img class="imageStock1" src="ressources/images/produit-perime-1.svg" alt="Stock" class="iconeCarte">
+                                <img class="imageStock2" src="ressources/images/produit-perime-2.svg" alt="Stock" class="iconeCarte">
+                            </div>
+                          
+                        </div>
+                    </div>
+                    
+                    <!-- Carte 3: Péremption -->
+                    <div class="col-md-3 col-sm-12 mb-4">
+                        <div class="carteFonctionnalite carteFonctionnalite--rose animation-scale">
+                            <div class="numeroCarte">03</div>
+                            <h3 class="titreCarte">Péremption</h3>
+                            <p class="descriptionCarte">Visualisez tous les produits périmés d'un coup d'œil pour ajuster votre stratégie et limiter les pertes.</p>
+                            
+                            <!-- Tableau de péremption -->
+                            <div class="imageCarteFonctionnalite">
+                                <img class="imagePeremption" src="ressources/images/peremption-img.svg" alt="Péremption" class="iconeCarte">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+            <!-- Section Approvisionnement intelligent -->
+            <section class="sectionApprovisionnement" aria-label="Approvisionnement intelligent avec DigiPharm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="titrePrincipal animation-fade-up">Approvisionnement intelligent</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="row blocsApprovisionnement">
+                        <!-- Bloc 1 -->
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="blocApprovisionnement animation-fade-up">
+                                <div class="iconeApprovisionnement">
+                                    <img src="ressources/icone/timer.svg" alt="">
+                                </div>
+                                <h3 class="titreApprovisionnement">Fini les heures perdues à saisir des factures</h3>
+                                <p class="descriptionApprovisionnement">Scanne ton bon, Digipharm s'occupe du reste. Produits, TVA, dates de péremption : tout est enregistré en quelques secondes, sans erreur.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Bloc 2 -->
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="blocApprovisionnement animation-fade-up">
+                                <div class="iconeApprovisionnement">
+                                    <img src="ressources/icone/emoji-happy.svg" alt="">
+                                  </div>
+                                <h3 class="titreApprovisionnement">Commandes intelligentes, sans stress.</h3>
+                                <p class="descriptionApprovisionnement">L'IA Digipharm analyse tes ventes quotidiennes et te dit exactement quoi recommander, sans que tu aies à y penser.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Bloc 3 -->
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="blocApprovisionnement prevoire animation-fade-up">
+                                <div class="iconeApprovisionnement">
+                                    <img src="ressources/icone/bag.svg" alt="">
+                                </div>
+                                <h3 class="titreApprovisionnement">Prévoit, Anticipe, Ajuste, Économise</h3>
+                                <p class="descriptionApprovisionnement">Savoir ce qui se vend et ce qui dort en rayon te permet d'optimiser chaque achat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+                 <!-- Section Vente et assurance AMO -->
+
+                 <section class="sectionVideo" aria-label="Solution de vente et assurance AMO DigiPharm" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <!-- Premier bloc: Texte -->
+                            <div class="col-lg-6 col-md-12">
+                                <div class="blocTexteVideo animation-fade-left">
+                                    <h2 class="titreSection">
+                                        Ventes et AMO, enfin réunies au même endroit.</h2>
+                                    <p class="sousTitreSection">
+                                        La vente n’a jamais été aussi simple. Les prix AMO s’appliquent automatiquement à vos produits.
+                                        Plus besoin de vérifier, de retaper ou de jongler entre plusieurs logiciels.
+                                         Digipharm centralise tout, et génère vos factures AMO sans erreur.</p>
+                                   <div class="boutonsHero video-btn">
+                                    <a href="#reserverDemo" class="boutonPrimaire">Je réserve ma démo</a>
+                                   </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Deuxième bloc: Vidéo -->
+                            <div class="col-lg-6 col-md-12">
+                                <div class="blocVideo animation-fade-right">
+                                    <video class="videoPresentation" controls poster="ressources/images/digipharm-app-apercu.svg">
+                                        <source src="ressources/videos/vente_assurance.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la lecture de vidéos.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+       
+            <!-- Section FAQ -->
+            <section id="faq" class="sectionFAQ" aria-label="Questions fréquemment posées" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="container">
+                    <h2 class="titreSectionCentre text-center animation-fade-up">Questions fréquemment posées</h2>
+                    <div class="faqConteneur animation-fade-up">
+                        <!-- Question 1 -->
+                        <div class="faqItem" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <div class="faqQuestion">
+                                <h3 itemprop="name">Est-ce que Digipharm est compliqué à utiliser?</h3>
+                                <div class="faqToggle">
+                                    <img src="ressources/icone/arrow-down.svg" alt="Afficher/Masquer" width="16" height="16" aria-hidden="true">
+                                </div>
+                            </div>
+                            <div class="faqReponse" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <p itemprop="text">Non, DigiPharm a été conçu pour être simple et intuitif. Notre interface utilisateur est facile à prendre en main, même si vous n'êtes pas à l'aise avec la technologie. Une formation rapide suffit pour maîtriser toutes les fonctionnalités.</p>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>
+                                    Et si je perds mes données ?</h3>
+                                <div class="faqToggle">
+                                    <img src="ressources/icone/arrow-down.svg" alt="Afficher/Masquer">
+                                </div>
+                            </div>
+                            <div class="faqReponse">
+                                <p>
+                                    Impossible. Toutes vos données sont sauvegardées automatiquement et sécurisées sur nos serveurs. Vous gardez le contrôle total et pouvez y accéder à tout moment.</p>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>Dois-je changer tout mon matériel ?</h3>
+                                <div class="faqToggle">
+                                    <img src="ressources/icone/arrow-down.svg" alt="Afficher/Masquer">
+                                </div>
+                            </div>
+                            <div class="faqReponse">
+                                <p>
+                                    Non. Digipharm fonctionne sur vos ordinateurs existants. Il est compatible avec les scanners de codes-barres standards. Aucun investissement lourd n’est nécessaire.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>Qu’en est-il du transfert de mes anciens stocks ?</h3>
+                                <div class="faqToggle">
+                                    <img src="ressources/icone/arrow-down.svg" alt="Afficher/Masquer">
+                                </div>
+                            </div>
+                            <div class="faqReponse">
+                                <p> 
+                                    Notre équipe vous accompagne. Nous vous aidons à importer facilement vos anciens produits et à tout remettre en ordre. Vous n’êtes jamais seul dans la transition.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Question 5 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>Combien de temps faut-il pour prendre en main l’outil ?</h3>
+                                <div class="faqToggle">
+                                    <img src="ressources/icone/arrow-down.svg" alt="Afficher/Masquer">
+                                </div>
+                            </div>
+                            <div class="faqReponse">
+                                <p> 
+                                    Quelques heures suffisent. Grâce à notre interface claire et à nos guides, vous pouvez commencer à l’utiliser le jour même. Et notre support est disponible pour vous assister.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Question 6 -->
+                        <div class="faqItem">
+                            <div class="faqQuestion">
+                                <h3>Et si ça ne me convient pas ?</h3>
+                                <div class="faqToggle">
+                                    <img src="ressources/icone/arrow-down.svg" alt="Afficher/Masquer">
+                                </div>
+                            </div>
+                            <div class="faqReponse">
+                                <p> 
+                                    C'est justement l’objectif de la démo. Nous prenons le temps d’analyser votre situation avant toute décision. Aucune obligation : si Digipharm ne répond pas à vos besoins, vous êtes libre de ne pas continuer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Réservation Démo -->
+            <section id="reserverDemo" class="sectionDemo" aria-label="Réservation d'une démo personnalisée">
+                <div class="container">
+                    <div class="row">
+                        <!-- Premier bloc: Texte -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="blocTexteDemo animation-fade-left">
+                                <h2 class="titreSection mt-5 mb-1">Réservez votre démo personnalisée</h2>
+                                <p class="sousTitreSection">Discutez avec un membre de notre équipe, expliquez vos besoins, et découvrez comment Digipharm peut transformer la gestion de votre pharmacie. Ensemble, voyons si c'est la bonne solution pour vous.</p>
+                                
+                                <ul class="avantagesDemo">
+                                    <li class="itemProbleme">Démonstration complète adaptée à vos besoins</li>
+                                    <li class="itemProbleme">Réponses à toutes vos questions</li>
+                                    <li class="itemProbleme">Proposition personnalisée</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="blocFormulaireDemo animation-fade-right">
+                                <form id="formulaireDemo" class="formulaireDemo">
+                                    <div class="champFormulaire mb-1">
+                                        <label for="nomComplet">Nom Complet</label>
+                                        <input type="text" id="nomComplet" required placeholder="Ex:Mamadou Diallo">
+                                    </div>
+                                    
+                                    <div class="champFormulaire mb-0">
+                                        <label for="telephone">Numéro de téléphone</label>
+                                        <input type="tel" id="telephone" required placeholder="Ex: 223 73 83 21 33">
+                                    </div>
+                                    
+                                    <div class="champFormulaire mb-0">
+                                        <label for="fonction">Vous êtes</label>
+                                        <select id="fonction" name="fonction" required>
+                                            <option value="" disabled selected >Sélectionnez votre fonction</option>
+                                            <option value="gerant">Gérant</option>
+                                            <option value="pharmacien">Pharmacien</option>
+                                            <option value="assistant">Assistant</option>
+                                            <option value="autre">Autre</option>
+                                        </select>
+                                    </div>
+                                    
+                                    
+                                    <div class="champFormulaire mb-0">
+                                        <label for="question">Que souhaitez vous particulièrement découvrir lors de cette démo ?*</label>
+                                        <textarea id="question" rows="3"></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="boutonPrimaire boutonFormulaire">Envoyer ma demande</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter"> 
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="blocFooterLogo animation-fade-up">
+                        <div class="logoFooterContainer">
+                            <img src="ressources/images/digipharm-logo.svg" alt="DigiPharm Logo" class="logoFooter">
+                        </div>
+                        <p class="adresseFooter">Aci 2000 pres de bougie ba</p>
+                        <p class="emailFooter">digiplusmali@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="reseauxSociauxFooter">
+                        <a href="https://www.linkedin.com/" target="_blank" class="lienReseauSocial">
+                       <img src="ressources/icone/linkedin.svg" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="lienReseauSocial">
+                       <img src="ressources/icone/youtube.svg" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="lienReseauSocial">
+                       <img src="ressources/icone/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="droitsFooter">
+                        <p>&copy; 2025 digipharm. tous droits réservés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script personnalisé avec attribut defer pour améliorer les performances -->
+<script src="ressources/script.js" defer></script>
+
+<!-- Conseils pour finaliser le SEO -->
+<!-- 1. Créer un fichier sitemap.xml à la racine du site -->
+<!-- 2. Créer un fichier robots.txt à la racine du site -->
+<!-- 3. Ajouter votre site à Google Search Console et Bing Webmaster Tools -->
+<!-- 4. Mettre en place Google Analytics ou une alternative respectueuse de la vie privée -->
+</body>
+</html>

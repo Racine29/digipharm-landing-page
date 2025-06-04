@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Check</title>
+    <g id="Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.707,15.707 C9.512,15.902 9.256,16 9,16 C8.744,16 8.488,15.902 8.293,15.707 L4.293,11.707 C3.902,11.316 3.902,10.684 4.293,10.293 C4.684,9.902 5.316,9.902 5.707,10.293 L9,13.586 L18.293,4.293 C18.684,3.902 19.316,3.902 19.707,4.293 C20.098,4.684 20.098,5.316 19.707,5.707 L9.707,15.707 Z" fill="#063EEA" fill-rule="nonzero"></path>
+    </g>
+</svg>
