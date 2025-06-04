@@ -591,8 +591,9 @@ header + section {
 .sousTitreSection {
     font-size: var(--size-14px);
     color: var(--text1-color);
-    margin-bottom: clamp(var(--spacing-16px), 2vw, var(--spacing-20px));
-    line-height: 1.6;
+    margin-top: var(--spacing-16px) !important;
+    margin-bottom: clamp(var(--spacing-16px), 5vw, var(--spacing-20px)) !important;
+    line-height: 1.8;
     font-weight: 500;
     max-width: clamp(280px, 90%, 350px);
 }
@@ -693,9 +694,7 @@ header + section {
         margin: auto;
         
     }
-    .sousTitreSection{
-        margin-top: var(--spacing-8px);
-     }
+   
     .video-btn{
         justify-content: center !important;
        
@@ -1349,11 +1348,7 @@ select option{
         
         
     }
-    .sousTitreSection{
-         margin-top: var(--spacing-8px);
-         margin-bottom: var(--spacing-8px);
-
-     }
+ 
      .blocTexteProblemes{
         margin-bottom: 0;
      }
