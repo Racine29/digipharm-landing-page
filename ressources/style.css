@@ -494,14 +494,15 @@ header + section {
 }
 
 .heroBackground{
-   left: var(--size-20px);
-   right: var(--size-20px);
+   width: 95%;
     height: clamp(500px, 69vw, 700px);
     background-color: var(--bg-color);
     border-radius: var(--round-12px);
+ left: 20px;
+ right: 20px;
  
     position: absolute;
-    top: 0;
+    top: 5px;
     
     
     
@@ -931,7 +932,7 @@ header + section {
 }
 .blocFormulaireDemo {
     background-color: white;
-    padding: var(--spacing-32px) var(--spacing-16px);
+    padding: var(--spacing-32px) clamp(var(--spacing-16px), 5vw, var(--spacing-32px));
 }
 
 .formulaireDemo {
@@ -1294,6 +1295,7 @@ select option.placeholder {
     .heroBackground{
         left: 0;
         right: 0;
+        width: 100%;
     }
     .titreHero{
         padding: 0 var(--spacing-10px);
