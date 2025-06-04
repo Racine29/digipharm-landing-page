@@ -34,7 +34,7 @@
     --size-10px: 0.625rem;
     --size-12px: 0.75rem;
     --size-13px: 0.813rem;
-    --size-14px: 0.875rem;
+    --size-14px: 0.9rem;
     --size-15px: 0.9rem;
     --size-16px: 1rem;
     --size-18px: 1.1rem;
@@ -473,7 +473,7 @@ header + section {
 }
 
 .titreHero {
-    font-size: clamp(24px, 6vw, 44px);
+    font-size: clamp(var(--size-28px), 6vw, var(--size-44px));
     font-weight: 700;
     color: var(--black-color);
     margin-bottom: 20px;
@@ -1288,7 +1288,7 @@ select option{
     }
     .titreHero{
         padding: 0 var(--spacing-10px);
-        padding-top: var(--spacing-20px);
+        padding-top: var(--spacing-40px);
     }
     
     .logo img {
