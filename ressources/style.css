@@ -1353,6 +1353,10 @@ select option{
         margin-bottom: 0;
      }
 
+     .appApercu{
+        content: url("images/digipharm-app-respo-apercu.png");
+        width: 100%;
+     }
    
  
     }
