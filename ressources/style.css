@@ -79,6 +79,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--black-color);
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 /* Styles de la barre de navigation */
@@ -1078,6 +1079,7 @@ select option{
 }
 
 .blocFooterLogo {
+    padding-top: var(--spacing-20px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1114,6 +1116,7 @@ select option{
 .droitsFooter {
     text-align: center;
     padding-top: var(--spacing-20px);
+    padding-bottom: var(--spacing-20px);
     margin-top: var(--spacing-20px);
     border-top: 1px solid #F0F0F0;
     color: var(--text1-color);
