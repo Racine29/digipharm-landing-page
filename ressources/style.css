@@ -482,7 +482,7 @@ header + section {
 }
 
 .sousTitreHero {
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(var(--size-14px), 3vw, var(--size-16px));
     color: var(--text1-color);
     max-width: clamp(300px, 80%, 510px);
     margin: 0 auto 40px;
@@ -780,7 +780,7 @@ header + section {
 }
 
 .descriptionCarte {
-    font-size: var(--size-13px);
+    font-size: var(--size-14px);
     color: var(--text1-color);
     line-height: 24px;
      font-weight: 500;
