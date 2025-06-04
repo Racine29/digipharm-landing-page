@@ -487,10 +487,10 @@ header + section {
 .sousTitreHero {
     font-size: clamp(var(--size-14px), 3vw, var(--size-16px));
     color: var(--text1-color);
-    max-width: clamp(300px, 80%, 510px);
-    margin: 0 auto 40px;
+    max-width: clamp(auto, 80%, 510px);
+    margin: 0 auto var(--spacing-40px);
     font-weight: 500;
-    padding: 0 var(--spacing-14px);
+    padding: 0 clamp(var(--spacing-6px), 5vw, var(--spacing-16px));
 }
 
 .heroBackground{
