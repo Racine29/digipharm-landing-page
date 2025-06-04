@@ -592,7 +592,7 @@ header + section {
     font-size: var(--size-14px);
     color: var(--text1-color);
     margin-top: var(--spacing-16px) !important;
-    margin-bottom: clamp(var(--spacing-16px), 5vw, var(--spacing-20px)) !important;
+    margin-bottom:   var(--spacing-20px) !important;
     line-height: 1.8;
     font-weight: 500;
     max-width: clamp(280px, 90%, 350px);
